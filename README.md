@@ -1,33 +1,38 @@
-FastAPI To-Do App
-A lightweight, containerized To-Do API built with FastAPI, SQLAlchemy, and Pydantic.
+# FastAPI To-Do App
+
+A lightweight, containerized To-Do API built with FastAPI, SQLAlchemy, and Pydantic.  
 Fully Dockerized and ready for optional Kubernetes deployment.
 
-Features
-Simple CRUD API (Create, Read)
+---
 
-FastAPI framework
+## Features
 
-Pydantic for validation
+- Simple CRUD API (Create, Read)
+- FastAPI framework
+- Pydantic for validation
+- SQLAlchemy with SQLite
+- Docker support
+- Kubernetes manifests and Helm chart included (optional)
 
-SQLAlchemy with SQLite
+---
 
-Docker support
+## Tech Stack
 
-Kubernetes manifests and Helm chart included (optional)
+- Python 3.11  
+- FastAPI  
+- SQLAlchemy  
+- Pydantic  
+- SQLite  
+- Docker  
+- Kubernetes (optional)  
+- Helm (optional)
 
-Tech Stack
-Python 3.11
+---
 
-FastAPI
+## Getting Started
 
-SQLAlchemy
+### Run Locally with Docker
 
-Pydantic
-
-SQLite
-
-Docker
-
-Kubernetes 
-
-Helm 
+```bash
+docker build -t fastapi-todo-app .
+docker run -p 8000:8000 fastapi-todo-app
