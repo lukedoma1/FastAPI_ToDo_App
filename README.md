@@ -44,8 +44,8 @@ docker run -p 8000:8000 fastapi-todo-app
 ```bash
 docker tag fastapi-todo-app yourname/fastapi-todo-app:latest
 docker push yourname/fastapi-todo-app:latest
-Apply Kubernetes configs:
 ```
+### Apply Kubernetes configs:
 ```bash
 kubectl apply -f k8s/
 ```
