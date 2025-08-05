@@ -36,3 +36,21 @@ Fully Dockerized and ready for optional Kubernetes deployment.
 ```bash
 docker build -t fastapi-todo-app .
 docker run -p 8000:8000 fastapi-todo-app
+```
+
+### Deploy to Kubernetes
+# Tag and push your image to Docker Hub:
+
+```bash
+Copy
+Edit
+docker tag fastapi-todo-app yourname/fastapi-todo-app:latest
+docker push yourname/fastapi-todo-app:latest
+Apply Kubernetes configs:
+```
+```
+bash
+Copy
+Edit
+kubectl apply -f k8s/
+```
