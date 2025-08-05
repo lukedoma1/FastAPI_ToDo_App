@@ -31,7 +31,7 @@ Fully Dockerized and ready for optional Kubernetes deployment.
 
 ## Getting Started
 
-### Run Locally with Docker
+#### Run Locally with Docker
 
 ```bash
 docker build -t fastapi-todo-app .
